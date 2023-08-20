@@ -146,13 +146,21 @@
   <script>
     const submit = document.getElementById('submit');
     submit.addEventListener('click', function () {
-      const Aberasi = document.getElementById('Aberasi').value;
-      const msg = document.getElementById('msg').value;
+      const psiko_1 = document.getElementById('psiko_1').value;
+      const psiko_2 = document.getElementById('psiko_2').value;
+      const psiko_3 = document.getElementById('psiko_3').value;
+      const psiko_4 = document.getElementById('psiko_4').value;
+      const psiko_5 = document.getElementById('psiko_5').value;
       const psiko_6 = document.getElementById('psiko_6').value;
+      if(psiko_1 == "" || psiko_2 == "" || psiko_3 == "" || psiko_4 == "" || psiko_5 == "" || psiko_6 == ""){
+        alert('jawaban kamu salah, silahkan coba lagi. Jangan lupa diisi semua ya!');
+        return;
+      }
+      const msg = document.getElementById('msg').value;
       const total_nabi = document.getElementById('total_nabi').value;
       const rukun_islam = document.getElementById('rukun_islam').value;
 
-      if (msg.toLowerCase() === 'nuh' && psiko_6.toLowerCase() === 'c' && total_nabi.toLowerCase() === '25' && rukun_islam.toLowerCase() === '5') {
+      if (msg.toLowerCase() === 'nuh' && total_nabi.toLowerCase() === '25' && rukun_islam.toLowerCase() === '5') {
         alert('jawaban kamu benar, selamat kamu mendapatkan hadiah');
         window.location.href = 'https://maps.google.com/maps/search/49RP%2B2FF%2C%20Jati%2C%20Wonokromo%2C%20Kec.%20Pleret%2C%20Kabupaten%20Bantul%2C%20Daerah%20Istimewa%20Yogyakarta%2055791%2C%20Indonesia/@-7.859900803675489,110.38617990911006,17z?hl=en';
       } else {
