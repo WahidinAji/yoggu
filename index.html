@@ -15,6 +15,7 @@
 </head>
 
 <!-- <body class="bg-dark text-white"> -->
+
 <body data-bs-theme="dark">
   <div class="container my-2 text-center">
     <!-- bg-light"> -->
@@ -48,6 +49,17 @@
       <img class="my-5" src="./22.jpeg" alt="yogu yaga">
       <img class="my-5" src="./23.jpeg" alt="yogu yaga">
       <img class="my-5" src="./24.jpeg" alt="yogu yaga">
+      <img class="my-5" src="./25.jpg" alt="yogu yaga">
+      <img class="my-5" src="./26.jpg" alt="yogu yaga">
+      <img class="my-5" src="./27.jpg" alt="yogu yaga">
+      <video class="my-5" width="100%" src="./28.mp4" alt="yogu yaga" controls>
+        <source src="./28.mp4" type="video/mp4">
+      </video>
+      <img class="my-5" src="./29.jpg" alt="yogu yaga">
+      <img class="my-5" src="./30.jpg" alt="yogu yaga">
+      <img class="my-5" src="./31.jpg" alt="yogu yaga">
+      <img class="my-5" src="./32.jpg" alt="yogu yaga">
+      <img class="my-5" src="./33.jpg" alt="yogu yaga">
       <img class="my-5" src="./a-cat.jpg" alt="yogu yaga">
     </div>
     <!-- Button trigger modal -->
@@ -58,7 +70,8 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -87,9 +100,10 @@
             <label for="psiko_5">Suatu seri: 13-14-13-14-11-12-11-12-15-16-15-16-13 seri selanjutnya adalah… </label>
             <input name="psiko_5" id="psiko_5" type="text" class="form-control">
           </div>
-          
-          <h3>Contoh Soal Psikotes Analog Verbal: Sinonim (Persamaan Kata)</h3>
-          <span>Petunjuk Soal: Pilihlah satu jawaban yang mempunyai arti sama atau paling dekat dengan arti kata yang dicetak dengan huruf kapital</span>
+
+          <h3>Sinonim (Persamaan Kata)</h3>
+          <span>Petunjuk Soal: Pilihlah satu jawaban yang mempunyai arti sama atau paling dekat dengan arti kata yang
+            dicetak dengan huruf kapital</span>
           <div class="form-group my-2">
             <label for="psiko_6">RELATIF = </label>
             <ol type="A">
@@ -101,7 +115,7 @@
             </ol>
             <input name="psiko_6" id="psiko_6" type="text" class="form-control">
           </div>
-          
+
 
           <div class="form-group my-2">
             <label for="total_nabi">Jumlah nabi ada berapa? </label>
@@ -134,8 +148,11 @@
     submit.addEventListener('click', function () {
       const Aberasi = document.getElementById('Aberasi').value;
       const msg = document.getElementById('msg').value;
-      
-      if (msg.toLowerCase() === 'nuh') {
+      const psiko_6 = document.getElementById('psiko_6').value;
+      const total_nabi = document.getElementById('total_nabi').value;
+      const rukun_islam = document.getElementById('rukun_islam').value;
+
+      if (msg.toLowerCase() === 'nuh' && psiko_6.toLowerCase() === 'c' && total_nabi.toLowerCase() === '25' && rukun_islam.toLowerCase() === '5') {
         alert('jawaban kamu benar, selamat kamu mendapatkan hadiah');
         window.location.href = 'https://maps.google.com/maps/search/49RP%2B2FF%2C%20Jati%2C%20Wonokromo%2C%20Kec.%20Pleret%2C%20Kabupaten%20Bantul%2C%20Daerah%20Istimewa%20Yogyakarta%2055791%2C%20Indonesia/@-7.859900803675489,110.38617990911006,17z?hl=en';
       } else {
